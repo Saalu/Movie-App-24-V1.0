@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800&display=swap');
+
+:root{
+    --amazon-yellow:#FEBD69;
+    --green: #27ae60;
+    --blue: #1F6FEB;
+    --dark-green:#219150;
+    --dark-bg:#032541;
+    --yellow:#e7ab29;
+    --black:#444;
+    --light:#666;
+    --border:.1rem solid rgba(0,0,0,0.1);
+    --border-focus:.1rem solid rgba(0, 0, 0, 0.1);
+    --border-hover:.1rem solid var(--black);
+    --box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    --shadow: 0 .1rem 1rem rgba(0,0,0,.1);
+    --blue-shadow: 0 .1rem 1rem rgba(41,126,231, 0.1);
+    --bgr-color: #fcfcfc;
+    --text-white: #fcfcfc;
+    --nav-bg: #203040;
+    --bg-color: #131921;
+    --blur-bg:rgba(0,0,0,.7);
+    --btn-yellow:#FFD814;
+
+    /* ________________________________________________- */
+    --bodyColor: #00192f;
+    --textGreen: #64ffda;
+    --textLight: #ccd6f6;
+    --textDark: #8892b0;
+    --hoverColor: rgba(100, 167, 255, 0.1);
+    --navbarShadow: 0 10px 30px -10px rgba(2,12,27,.7);
+    --amazon-bg:#E3E6E6;
+
+}
+*{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;padding: 0;
+    outline: none; border: none;
+    transition: all .2s linear;
+    text-decoration: none;
+    list-style: none;
+}
+html{
+    font-size: 62.5%;  /* 16px * 62.5 =10px = 1rem  */
+   
+}
+body {
+    font-size: 1.6rem;
+    height: 100vh;
+    color: var(--black);
+}
+
+header{
+    height: 7rem;
+    box-shadow: var(--shadow);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #032541;
+}
+header .brand a{
+   margin-left: 1rem;
+   color: #fff;
+   font-weight: 600;
+   font-size: 1.7rem;
+}
+main{  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.intro-container{
+    margin:0 5rem ;
+    background:#001E36;
+    color: #fff;
+    padding:3rem ;
+    width: 100rem;
+}
+.intro-container p{
+   font-weight: 600;
+   font-size: 1.8rem;
+   margin-bottom: 3rem;
+}
+
+.form-container{
+    margin-top: 3rem;
+}
+
+.form-container form{
+    display: flex;
+}
+
+.form-container form input{
+    border: var(--border);
+    width: 100%;
+    padding: .6rem 2rem ;
+    font-size: 1.5rem;
+    color: var(--black);
+    border-radius: 1rem 0 0 1rem;
+    border-right: none;
+
+}
+
+.form-container form input:focus{
+  border: .1rem solid var(--black);
+  border-right: none;
+
+}
+.form-container form .search-btn{
+    border-radius: 0 1rem  1rem 0;
+    /* background: var(--textGreen); */
+    width: 12rem;
+    color: var(--black);
+    background-image: linear-gradient(to bottom right, var(--blue), var(--textGreen));
+    color: #fff;
+    font-weight: 600;
+
+}
+.form-container form .search-btn:hover{
+    box-shadow: var(--shadow);
+
+}
+/* _____________________-----Movies Section------______________________ */
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.movie-section{
+    margin:0 5rem ;
+    padding:3rem ;
+    width: 100rem;
+}
+.movie-section .title{
+    display: flex;
+    margin-bottom: 2rem;
+
+}
+.movie-section {
+
+    
+}
+.movie-section .title p{
+    font-weight: 600;
+    font-size: 1.7rem;
+    
+}
+.movie-section .title span{
+    margin-left: 2rem;
+    font-size: 1.5rem;
+    
+}
+
+.movies .img-container{
+    width: 14rem;
+    height: 20rem;
+    border-radius: 1.2rem; 
+    display: flex;
+    border: var(--border);
+
+}
+
+.movies .img-container img{
+    border-radius: 1.2rem;
+    width: 100%;
+    height: 100%;
+}
+
+.movie-section .movies .desc{
+    padding: 1rem .7rem;
+}
+
+.movie-section .movies .movie-title{
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+.movie-section .movies .movie-date{
+    font-size: 1.3rem;
+
+}
+.movie-section .movies {
+    border-radius: 1.2rem; 
+    margin-right: .5rem; 
+}
+.movie-section .movies:hover {
+    box-shadow: var(--shadow);
+    /* border: .1rem solid var(--textGreen); */
+    border: var(--border);
+}
+
+.movies-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* +++++++++++++++++++++++++++Responsiveness++++++++++++++++ */
+
+
+@media (max-width:768px) {
+ 
+   
+}
+@media (max-width:450px) {
+  html{
+      font-size: 50%;
+
+  }
+ 
+}
+@media (max-width:991px) {
+  html{
+      font-size: 55%;
+
+  }
+
+}
