@@ -109,7 +109,7 @@ main{
 }
 .form-container form .search-btn{
     border-radius: 0 1rem  1rem 0;
-    /* background: var(--textGreen); */
+    cursor: pointer;
     width: 12rem;
     color: var(--black);
     background-image: linear-gradient(to bottom right, var(--blue), var(--textGreen));
@@ -118,7 +118,7 @@ main{
 
 }
 .form-container form .search-btn:hover{
-    box-shadow: var(--shadow);
+    box-shadow: var(--navbarShadow);
 
 }
 /* _____________________-----Movies Section------______________________ */
@@ -181,18 +181,35 @@ section{
 }
 .movie-section .movies {
     border-radius: 1.2rem; 
-    margin-right: .5rem; 
+    margin:  0  .5rem 1rem 0  ; 
 }
 .movie-section .movies:hover {
     box-shadow: var(--shadow);
     /* border: .1rem solid var(--textGreen); */
-    border: var(--border);
+    /* border: var(--border); */
+}
+.movie-section .movies {
+    /* border: var(--border); */
+    display: flex;
+}
+/* _________________________-----________________ */
+.movie-section .movies .content{
+    margin-right:  1rem   ;
+
+}
+.movie-section .movies .content:hover{
+    border-radius: 1.2rem; 
+    /* margin:  0  .5rem 1rem 0  ; */
+    box-shadow: var(--shadow);
+
 }
 
 .movies-container{
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
+    width: 100%;
+    overflow-x: auto;
 }
 
 
